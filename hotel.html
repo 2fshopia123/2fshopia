@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hôtel & Restaurant de Luxe</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Hôtel & Restaurant de Luxe</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#chambres">Nos Chambres</a></li>
+                <li><a href="#restaurant">Le Restaurant</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Accueil -->
+    <section id="accueil" class="hero">
+        <h2>Bienvenue à l'Hôtel & Restaurant de Luxe</h2>
+        <p>Venez découvrir un séjour inoubliable alliant confort et gastronomie.</p>
+    </section>
+
+    <!-- Nos Chambres -->
+    <section id="chambres">
+        <h2>Nos Chambres</h2>
+        <div class="chambres-container">
+            <div class="chambre">
+                <img src="https://via.placeholder.com/300x200" alt="Chambre Standard"> <!-- Remplace par une vraie image -->
+                <h3>Chambre Standard</h3>
+                <p>Une chambre élégante pour un séjour confortable.</p>
+            </div>
+            <div class="chambre">
+                <img src="https://via.placeholder.com/300x200" alt="Chambre Suite"> <!-- Remplace par une vraie image -->
+                <h3>Chambre Suite</h3>
+                <p>Une suite de luxe avec vue sur la mer et des équipements haut de gamme.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant -->
+    <section id="restaurant">
+        <h2>Le Restaurant</h2>
+        <p>Profitez de notre cuisine raffinée dans un cadre idyllique.</p>
+        <div class="menu">
+            <h3>Menu du Jour</h3>
+            <ul>
+                <li>Entrée: Salade fraîche de saison</li>
+                <li>Plat: Filet mignon accompagné de légumes grillés</li>
+                <li>Dessert: Tarte au chocolat maison</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contactez-Nous</h2>
+        <p>Réservez dès maintenant en nous appelant ou via notre formulaire.</p>
+        <form action="#" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hôtel & Restaurant de Luxe - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        // Ajouter l'effet d'ombre lors du défilement
+        window.onscroll = function() {
+            var header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
+    </script>
+</body>
+</html>
